@@ -1,5 +1,6 @@
 :root {
   /* Primary Colors */
+  --clr--white: hsl(0, 0%, 99%);
   --clr--dark-cyan: hsl(185, 75%, 39%);
   --clr--very-dark-blue: hsl(229, 23%, 23%);
   --clr--dark-grayish-blue: hsl(227, 10%, 46%);
@@ -79,4 +80,63 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-color: var(--clr--dark-cyan);
+  font-family: var(--ff--primary);
+  font-weight: var(--fw--regular);
+  font-size: var(--fs--normal);
+  color: var(--clr--dark-grayish-blue);
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.card {
+  background-color: var(--clr--white);
+  text-align: center;
+  margin-inline: 1.5rem;
+}
+
+.card__info {
+  display: grid;
+  justify-items: center;
+}
+
+.card__info img {
+  width: 120px;
+  height: 120px;
+  border-radius: 120px;
+  border: 5px solid var(--clr--white);
+  margin-top: -18%;
+}
+
+.card__info_header,
+.flex-group {
+  padding: 2rem;
+}
+
+.divider {
+  width: 100%;
+  border-top: 1px solid var(--clr--dark-gray);
+  opacity: 0.3;
+}
+
+.flex-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-group p > span {
+  display: block;
 }
