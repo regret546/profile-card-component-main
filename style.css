@@ -193,18 +193,18 @@ body {
 
 /* Mobile Design */
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 500px) {
   .top-bg {
-    height: 375px;
-    width: 375px;
-    top: 0;
-    left: -220px;
+    height: 500px;
+    width: 500px;
+    top: -50px;
+    left: -350px;
   }
 
   .bottom-bg {
-    height: 375px;
-    width: 375px;
-    right: -220px;
-    bottom: 0;
+    height: 500px;
+    width: 500px;
+    right: -270px;
+    bottom: -150px;
   }
 }
